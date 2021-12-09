@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block breadcrumb %}
-  <li class="breadcrumb-item active">Question Sets</li>
+  <li class="breadcrumb-item active">Topic Sets</li>
 {% endblock %}
 {% block content %}
     {% if questions_list %}
-        <p class="h3">Alright! Let's select a Question Set to start writing!</p>
+        <p class="h3">Choose a topic</p>
         <!-- <ul>
             {% for question in questions_list %}
             <li><a href="/{{ question.set }}">Question Set {{ question.set }}</a></li>
@@ -14,7 +14,7 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Question</th>
+                    <th scope="col">Requirement</th>
                     <th scope="col">Min Score</th>
                     <th scope="col">Max Score</th>
                   </tr>
@@ -33,7 +33,7 @@
 
         <style type="text/css">
             tr:hover {
-                background-color: #cc99ff;
+                background-color: greenyellow;
                 cursor: pointer;
             }
         </style>

@@ -7,15 +7,11 @@
 {% endblock %}
 {% block content %}
     <div class="jumbotron">
-        <h1 class="display-4">Grade {{ essay.score }}</h1>
-        <p class="lead">Congratulations! Maximum Possible Score on this question is {{ essay.question.max_score }}</p>
+        <h1 class="display-4">Grade {{ essay.score }} / {{ essay.question.max_score }}</h1>
+        <p class="lead">Congratulations !</p>
         <hr class="my-4">
-        <p>Your essay is graded by the magical power of neural networks.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
-
     <div class="container">
-            <h2 class="display-4">Your Submission</h2>
-            <p class="text-justify">{{ essay.content }}</p>
+            <h2 class="display-3">{{essay.content}}</h2>
         </div>
 {% endblock %}
